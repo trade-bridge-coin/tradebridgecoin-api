@@ -66,7 +66,7 @@ class CNCCommodities {
                         q.prevClose = Number(fields[5]);
                         q.bid = Number(fields[6]);
                         q.ask = Number(fields[7]);
-                        q.quote = Number(fields[8]);
+                        q.quote = Number(fields[8]) === 0 ? Number(fields[5]) : Number(fields[8]);
                         q.settlement = Number(fields[9]);
                         q.prevSettlement = Number(fields[10]);
                         q.bidVol1 = Number(fields[11]);
